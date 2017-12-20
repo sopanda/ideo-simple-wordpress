@@ -79,42 +79,38 @@
                     <div class="clearfix"></div>
 
                     <div class="carousel-inner wrapper">
-                        <div class="item active" id="first-slide">
+                        <div class="item active" id="first-slide" style="background: url(<?php echo esc_url( get_theme_mod( 'theme_slug_slide_img_upload_one' ) ); ?>) no-repeat center center / cover">
                             <div class="row hidden-xs">
                                 <div class="col-sm-12 col-lg-12 slider-text-container">
-                                    <h2 class="carousel-header" id="cartitle0">SIMPLE
-                                        <br> - z nami biznes jest prostszy!</h2>
-                                    <p class="description hidden-sm hidden-md hidden-md" id="cardescription0">Dowiedź się więcej</p>
+                                    <h2 class="carousel-header" id="cartitle0"><?php echo get_theme_mod( 'theme_slug_slide_title_1' ); ?></h2>
+                                    <p class="description hidden-sm hidden-md hidden-md" id="cardescription0"><?php echo get_theme_mod( 'theme_slug_slide_text_1' ); ?></p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item" id="second-slide">
+                        <div class="item" id="second-slide" style="background: url(<?php echo esc_url( get_theme_mod( 'theme_slug_slide_img_upload_two' ) ); ?>) no-repeat center center / cover">
                             <div class="row hidden-xs">
                                 <div class="col-sm-12 col-lg-12 slider-text-container">
-                                    <h2 class="carousel-header" id="cartitle1">SIMPLE
-                                        <br> - z nami biznes jest prostszy!</h2>
-                                    <p class="description hidden-sm hidden-md" id="cardescription1">Dowiedź się więcej</p>
+                                    <h2 class="carousel-header" id="cartitle1"><?php echo get_theme_mod( 'theme_slug_slide_title_2' ); ?></h2>
+                                    <p class="description hidden-sm hidden-md" id="cardescription1"><?php echo get_theme_mod( 'theme_slug_slide_text_2' ); ?></p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item" id="third-slide">
+                        <div class="item" id="third-slide" style="background: url(<?php echo esc_url( get_theme_mod( 'theme_slug_slide_img_upload_third' ) ); ?>) no-repeat center center / cover">
                             <div class="row hidden-xs">
                                 <div class="col-sm-12 col-lg-12 slider-text-container">
-                                    <h2 class="carousel-header" id="cartitle2">SIMPLE
-                                        <br> - z nami biznes jest prostszy!</h2>
-                                    <p class="description hidden-sm hidden-md" id="cardescription2">Dowiedź się więcej</p>
+                                    <h2 class="carousel-header" id="cartitle2"><?php echo get_theme_mod( 'theme_slug_slide_title_3' ); ?></h2>
+                                    <p class="description hidden-sm hidden-md" id="cardescription2"><?php echo get_theme_mod( 'theme_slug_slide_text_3' ); ?></p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="item" id="fourth-slide">
+                        <div class="item" id="fourth-slide" style="background: url(<?php echo esc_url( get_theme_mod( 'theme_slug_slide_img_upload_fourth' ) ); ?>) no-repeat center center / cover">
                             <div class="row hidden-xs">
                                 <div class="col-sm-12 col-lg-12 slider-text-container">
-                                    <h2 class="carousel-header" id="cartitle3">SIMPLE
-                                        <br> - z nami biznes jest prostszy!</h2>
-                                    <p class="description hidden-sm hidden-md" id="cardescription3">Dowiedź się więcej</p>
+                                    <h2 class="carousel-header" id="cartitle3"><?php echo get_theme_mod( 'theme_slug_slide_title_4' ); ?></h2>
+                                    <p class="description hidden-sm hidden-md" id="cardescription3"><?php echo get_theme_mod( 'theme_slug_slide_text_4' ); ?></p>
                                 </div>
                             </div>
                         </div>

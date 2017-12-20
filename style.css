@@ -172,35 +172,7 @@
     }
     /* END NAVIGATION BAR */
     /* Carousel */
-
-    #first-slide {
-        background: url("/img/carusel_1.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
-    #second-slide {
-        background: url("/img/carusel_2.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
-    #third-slide {
-        background: url("/img/carusel_3.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
-    #fourth-slide {
-        background: url("/img/carusel_4.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
+    
     .carousel {
         width: 100%;
         margin: 0 auto;
