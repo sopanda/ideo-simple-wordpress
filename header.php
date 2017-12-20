@@ -117,8 +117,8 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <!-- CAROUSEL  Ends -->
         </div>
-        <!-- CAROUSEL  Ends -->
     </section>
     <!-- Navigation and Header-section Ends-->
     <div class="clearfix"></div>
