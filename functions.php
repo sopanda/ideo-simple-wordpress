@@ -1,4 +1,22 @@
 <?php
+/* Wordpress features */
+
+function wp_theme_setup() {
+
+    load_theme_textdomain( "simple" );
+
+    add_theme_support( "title-tag"); /* now we can live without "title in header" */
+
+    add_theme_support( "custom-logo", array(
+        'height' => 139,
+        'width' => 189
+    ));
+
+}
+
+add_action( "after_setup_theme", "wp_theme_setup");
+/* Wordpress features END */
+
 
 /* Styles and scripts load */
 

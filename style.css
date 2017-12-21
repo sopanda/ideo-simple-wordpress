@@ -30,6 +30,11 @@
 
     /* NAVIGATION BAR */
 
+    .custom-logo {
+        margin-top: 20px;
+    }
+
+    
     .wrapper {
         height: 978px;
         margin: 0 auto;
@@ -159,7 +164,7 @@
 
     #logoCont,
     #logoCont-xs {
-        background: url('/img/logo.png') no-repeat center center;
+        background: no-repeat center center;
         background-color: #ffffff;
         background-size: 193px;
         width: 255px;
@@ -1116,6 +1121,11 @@
         body {
             overflow-x: hidden;
         }
+        .custom-logo {
+            margin-top: 5px;
+            width: 92px;
+            height: auto;
+        }
         #header-carousel-section {
             height: 529px;
         }
@@ -1780,6 +1790,15 @@
         body {
             overflow-x: hidden;
         }
+
+        .custom-logo {
+            height: auto;
+            width: 90px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 7px;
+        }
+
         #logoCont-xs {
             background-size: 95px;
             width: 130px;

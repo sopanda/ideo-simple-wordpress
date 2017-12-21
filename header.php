@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        <?php bloginfo('name') ?>
-    </title>
     <?php wp_head(); ?>
 </head>
 
@@ -22,16 +19,16 @@
             </div>
 
             <header>
-                <a href="<?php echo home_url() ?>" style="display:block;" class="visible-xs">
-                    <div id="logoCont-xs">
+                <a href="<?php echo home_url() ?>" style="display:block;">
+                    <div id="logoCont-xs" class="visible-xs">
+                        <?php the_custom_logo();?>
                     </div>
                 </a>
                 <div id="wrap-nav">
                     <nav class="navbar navbar-default text-center center-cont hidden-xs">
-                        <a href="<?php echo home_url() ?>" style="display:block;">
-                            <div id="logoCont">
-                            </div>
-                        </a>
+                        <div id="logoCont">
+                            <?php the_custom_logo();?>
+                        </div>
                         <?php wp_nav_menu( array('theme_location' => 'menu', 
                                                   'menu_class'=> 'nav navbar-nav hidden-xs', 
                                                   'container' => 'false') ); ?>
@@ -74,7 +71,7 @@
                                 </div>
                                 <div class="col-lg-2  col-sm-2 col-xs-2" id="btn-sub-wrap">
                                     <div class="form-group">
-                                        <input id="btn-subscribe" type="submit" name="submit" class="btn btn-primary" value="Zapisz się"/>
+                                        <input id="btn-subscribe" type="submit" name="submit" class="btn btn-primary" value="Zapisz się" />
                                     </div>
                                 </div>
                             </div>
