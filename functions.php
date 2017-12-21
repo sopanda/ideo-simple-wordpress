@@ -291,4 +291,9 @@ add_action( 'customize_register', 'theme_slug_home_img_slide_4' );
         SLIDER BLOCK ENDS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
+/* Now i will add widget support for theme */
+
+/* Widget section ENDS */
+
 ?>

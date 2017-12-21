@@ -576,6 +576,8 @@
     </section>
 
     <div class="clearfix"></div>
+    <?php dynamic_sidebar( 'custom-side-bar' ); ?>
+
 </main>
 <!-- Content Ends -->
 
