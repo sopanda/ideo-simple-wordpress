@@ -35,12 +35,15 @@
                     </nav>
                     <?php get_search_form(); ?>
                 </div>
+
             </header>
             <!-- Navigation Ends -->
-
             <!-- Carousel -->
-
+            <div id="main-Slider">
+            <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+            </div>
             <!-- CAROUSEL  Ends -->
+
         </div>
     </section>
     <!-- Navigation and Header-section Ends-->
