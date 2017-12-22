@@ -1303,11 +1303,9 @@
             height: 100%;
             /*for IE*/
         }
-
         .sidenav .nav li.li-hr {
             width: 79px;
         }
-        
         .grid {
             margin-top: 19px;
         }
@@ -1803,7 +1801,6 @@
         .closebtn span {
             color: #c2d1d8;
         }
-
         #menu-sidebar {
             position: relative;
             top: -1px;
@@ -1811,7 +1808,6 @@
             list-style: none;
             width: 154px;
         }
-
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
@@ -2396,23 +2392,32 @@
             float: none;
             width: 110px;
         }
+        .sidenav .nav li.li-hr {
+            width: 79px;
+        }
         #hr-brefore-socicon {
             margin-bottom: 14px;
             margin-top: 2px;
         }
-        .closebtn span {
-            width: 30px;
-            float: left;
-            color: #c2d1d8;
-            position: absolute;
+        #close-arrow {
+            position: relative;
+            top: 2px;
+            left: 66px;
             cursor: pointer;
-            font-size: 15px;
+            font-size: 12px;
             text-align: center;
             padding-left: 10px;
             transform: scale(-1, 1);
-            top: 133px;
-            left: 123px;
-            font-size: 9px;
+        }
+        .closebtn span {
+            color: #c2d1d8;
+        }
+        #menu-sidebar {
+            position: relative;
+            top: 0;
+            left: -54px;
+            list-style: none;
+            width: 134px;
         }
         #kontakt-side {
             position: relative;
@@ -2432,10 +2437,16 @@
             margin-bottom: 11px;
         }
         #hr-after-closebtn {
-            margin-top: 12px;
+            margin-top: 18px;
             margin-left: 26px;
-            margin-bottom: 4px;
-            width: 51px;
+            margin-bottom: -4px;
+            width: 48px;
+            position: relative;
+            top: -8px;
+            left: -17px;
+        }
+        #menu-side-list li:not(:last-child), #menu-sidebar li:not(:last-child) {
+            padding-bottom: 2px;
         }
         #fb-icon-li {
             width: 10px;
