@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer>
+<!-- <footer>
     <div class="wrapper-footer">
         <div class="center-cont">
             <div id="owl-footer" class="owl-carousel">
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 <!-- Footer Ends -->
 
 <?php wp_footer(); ?>
