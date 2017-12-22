@@ -2522,3 +2522,38 @@
             width: 51px;
         }
     }
+
+
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    404 Error styling
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    #page404-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    #btn-404:hover {
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+        -o-transition: ease-out 0.5s;
+        transition: ease-out 0.5s;
+        background-color: rgb(61, 145, 214);
+    }
+    
+    #page404-wrap p {
+        padding: 9px;
+    }
+
+    #page404-wrap h2 {
+        font-size: 51px;
+        color: #5798d1;
+        letter-spacing: 3px;
+    }
+
+     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    404 Error styling ends
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
