@@ -48,6 +48,7 @@ add_theme_support( 'html5', array('search-form') );
 
 register_nav_menu( 'menu', 'Location: on Top (Header Menu)' );
 
+
 /* Header menu register Ends*/
 
 ?>
