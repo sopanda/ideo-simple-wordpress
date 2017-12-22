@@ -11,7 +11,7 @@ function wp_theme_setup() {
         'height' => 139,
         'width' => 189
     ));
-
+    add_theme_support( 'widgets' );
 }
 
 add_action( "after_setup_theme", "wp_theme_setup");
@@ -47,7 +47,7 @@ add_theme_support( 'html5', array('search-form') );
 /* Header menu register */
 
 register_nav_menu( 'menu', 'Location: on Top (Header Menu)' );
-
+register_nav_menu( 'sidemenu', 'Location: on Left (Sidebar menu)' );
 
 /* Header menu register Ends*/
 

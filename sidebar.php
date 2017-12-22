@@ -9,24 +9,10 @@
                             <hr>
                         </li>
                         <li>
-                            <ul id="menu-side-list">
-                                <li>
-                                    <a href="#">Branże</a>
-                                </li>
-                                <li>
-                                    <a href="#">Produkty</a>
-                                </li>
-                                <li>
-                                    <a href="#">Usługi</a>
-                                </li>
-                                <li>
-                                    <a href="#">Aktualności</a>
-                                </li>
-                                <li>
-                                    <a href="#">Referencje</a>
-                                </li>
-                                <li>
-                                    <a href="#" id="kontakt-side">Kontakt</a>
+                            <?php wp_nav_menu( array('theme_location' => 'menu', 
+                            'menu_id'=> 'menu-side-list', 
+                            'container' => 'false') ); ?>
+                                <li id="close-arrow">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                                         <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                                     </a>
@@ -34,26 +20,9 @@
                                 <li class="li-hr">
                                     <hr id="hr-after-closebtn">
                                 </li>
-                                <li>
-                                    <a href="#">O firmie</a>
-                                </li>
-                                <li>
-                                    <a href="#">Nagrody</a>
-                                </li>
-                                <li>
-                                    <a href="#">Relacje
-                                        <br>inwestorskie</a>
-                                </li>
-                                <li>
-                                    <a href="#">Partnerzy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Kariera</a>
-                                </li>
-                                <li>
-                                    <a href="#">Strefa klienta</a>
-                                </li>
-                            </ul>
+                                <?php wp_nav_menu( array('theme_location' => 'sidemenu', 
+                                      'menu_id' => 'menu-sidebar',
+                                      'container' => 'false') ); ?>
                         </li>
                         <li class="li-hr">
                             <hr id="hr-brefore-socicon">
