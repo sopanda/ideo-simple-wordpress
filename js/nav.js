@@ -1,18 +1,38 @@
-(function($) {
-$(document).ready(function () {
-    $("#search-button").on("click", function (e) {
-        if ($("#search-input-container").hasClass("hdn")) {
+(function ($) {
+    $(document).ready(function () {
+        $("#search-button").on("click", function (e) {
+            if ($("#search-input-container").hasClass("hdn")) {
+                e.preventDefault();
+                $("#search-input-container").removeClass("hdn");
+            }
+        });
+
+        $("#hide-search-input-container").on("click", function (e) {
             e.preventDefault();
-            $("#search-input-container").removeClass("hdn");
+            $("#search-input-container").addClass("hdn");
+        });
+
+
+
+        let width = window.innerWidth || document.body.clientWidth;
+
+        if (width >= 1199) {
+            $('div#n2-ss-2 .n2-ss-control-bullet').css({
+                'width': "1000px",
+                "text-align": "right"
+            });
+
+        } else if (width >= 768 && width < 1199) {
+            $('div#n2-ss-2 .n2-ss-control-bullet').css({
+                'display' : 'none'
+            });
+        } else if (width >= 320 && width < 768) {
+
         }
     });
-
-    $("#hide-search-input-container").on("click", function (e) {
-        e.preventDefault();
-        $("#search-input-container").addClass("hdn");
-    });
-});
 })(jQuery);
+
+
 
 
 

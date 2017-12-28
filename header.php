@@ -39,9 +39,9 @@
             </header>
             <!-- Navigation Ends -->
             <!-- Carousel -->
-            <div id="main-Slider">
-            <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-            </div>
+                <?php 
+                    echo do_shortcode('[smartslider3 slider=2]');
+                ?>
             <!-- CAROUSEL  Ends -->
 
         </div>
