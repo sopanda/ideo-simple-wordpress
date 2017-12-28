@@ -1676,6 +1676,20 @@
         body {
             overflow-x: hidden;
         }
+
+        div#n2-ss-2 .nextend-bullet-bar > div {
+            padding-left: 0px;
+            padding-right: 16px;
+            padding-top: 1px;
+            margin: 3px;
+        }
+
+        div#n2-ss-2 .nextend-bullet-bar {
+            margin-bottom: 27px !important;
+            margin-right: 0px !important;
+            margin-left: 143px;
+        }
+
         #n2-ss-2 > div {
             height : 430px !important;
         }
