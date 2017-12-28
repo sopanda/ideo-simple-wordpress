@@ -523,6 +523,11 @@
         line-height: 20px;
         font-size: 15px;
     }
+
+    #branze-section p img {
+        width: 316px;
+        height: 150px;
+    }
     /* Produkty */
 
     #produkty-section {
@@ -1267,6 +1272,10 @@
             opacity: 0.6;
             position: absolute;
         }
+        #branze-section p img {
+            width: 189px;
+            height: 90px;
+        }
         .colums-marg img {
             height: 90px;
             width: 189px;
@@ -1753,7 +1762,7 @@
         }
 
         #n2-ss-2 > div {
-            height : 430px !important;
+            height : 429px !important;
         }
         .custom-logo {
             height: auto;
@@ -1871,6 +1880,16 @@
             opacity: 0.6;
             position: absolute;
         }
+
+        .grid .row:nth-child(2), .grid .row:nth-child(3) {
+            margin-top: 12px;
+        }
+        
+        #branze-section p img {
+            width: 93px;
+            height: 116px;
+        }
+
         .colums-marg img {
             width: 93px;
             height: 116px;
@@ -1922,7 +1941,7 @@
         }
         /* Produkty section */
         #produkty-section {
-            margin-top: -13px;
+            margin-top: 2px;
             height: 460px;
         }
         #produkty-section .title-sec {
