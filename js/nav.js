@@ -27,7 +27,12 @@
                 'display' : 'none'
             });
         } else if (width >= 320 && width < 768) {
-
+            $('div#n2-ss-2 .nextend-bullet-bar').wrap('<div class="dotsWrapMobile"></div');
+            $('.dotsWrapMobile').css({
+                'width': "300px",
+                "text-align": "right",
+                'margin-bottom': "-62px"
+            });
         }
     });
 })(jQuery);

@@ -30,6 +30,10 @@
 
     /* NAVIGATION BAR */
 
+    #header-carousel-section {
+        position: relative;
+    }
+
     .custom-logo {
         margin-top: 20px;
     }
@@ -179,6 +183,70 @@
 
     #main-Slider {
         height: 891px;
+    }
+
+    #new-form-carous {
+        position: absolute;
+        z-index: 15;
+        left: 50%;
+        bottom: 9px;
+        color: #073f57;
+        transform: translate(-50%, -50%);
+    }
+
+    #form-news-sect {
+        background-color: #ffffff;
+        width: 854px;
+        height: 55px;
+        padding-right: 0;
+    }
+
+    #form-news-sect img {
+        padding-top: 5px;
+    }
+
+    #lbl-email {
+        float: left;
+        font-size: 20px;
+        margin-left: 19px;
+        padding-right: 19px;
+    }
+
+    #email-input {
+        width: 369px;
+        border-radius: 0;
+        height: 33px;
+    }
+
+    #btn-sub-wrap {
+        padding: 0;
+        width: 109px;
+        margin-left: 8px;
+    }
+    
+    .news-gr {
+        padding-top: 11px;
+    }
+
+    #btn-subscribe {
+        height: 55px;
+        width: 133px;
+        border-radius: 0;
+        font-size: 20px;
+        background-color: #ffffff;
+        color: #073f57;
+        border: none;
+    }
+
+    #btn-subscribe:hover,
+    #btn-subscribe:focus {
+        background-color: #073f57;
+        color: #ffffff;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
     }
     /* Carousel End */
     /* SIDEBAR MENU */
@@ -1684,12 +1752,6 @@
             margin: 3px;
         }
 
-        div#n2-ss-2 .nextend-bullet-bar {
-            margin-bottom: 27px !important;
-            margin-right: 0px !important;
-            margin-left: 143px;
-        }
-
         #n2-ss-2 > div {
             height : 430px !important;
         }
@@ -1775,7 +1837,7 @@
             position: absolute;
             z-index: 15;
             left: 50%;
-            top: 95.5%;
+            bottom: -17px;
             color: #073f57;
             transform: translate(-50%, -50%);
             width: 90%;

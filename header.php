@@ -39,11 +39,33 @@
             </header>
             <!-- Navigation Ends -->
             <!-- Carousel -->
-                <?php 
+            <?php 
                     echo do_shortcode('[smartslider3 slider=2]');
                 ?>
             <!-- CAROUSEL  Ends -->
-
+            <form id="new-form-carous" class="form-inline">
+                <div class="row">
+                    <div class="center-cont">
+                        <div class="col-lg-10 0 col-sm-10 col-xs-10" id="form-news-sect">
+                            <div class="form-group hidden-xs">
+                                <img src="../img/letter.png" alt="Newsletter" class="img-responsive">
+                            </div>
+                            <div class="form-group news-gr">
+                                <label id="lbl-email" for="email-input" class="hidden-sm hidden-md hidden-xs">Chcesz otrzymywać od nas Newsletter?</label>
+                                <label id="lbl-email-sm" for="email-input-xs" class="visible-sm visible-md hidden-xs">Newsletter?</label>
+                                <input id="email-input" type="email" class="form-control hidden-xs" required>
+                                <input id="email-input-xs" type="email" class="form-control visible-xs" required placeholder="Newsletter?">
+                            </div>
+                        </div>
+                        <div class="col-lg-2  col-sm-2 col-xs-2" id="btn-sub-wrap">
+                            <div class="form-group">
+                                <button id="btn-subscribe" type="button" class="btn btn-primary">Zapisz się</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </form>
         </div>
     </section>
     <!-- Navigation and Header-section Ends-->
