@@ -6,6 +6,8 @@ function wp_theme_setup() {
     load_theme_textdomain( "simple" );
 
     add_theme_support( "title-tag"); /* now we can live without "title in header" */
+   
+    add_theme_support( 'post-thumbnails' ); /*featured images*/
 
     add_theme_support( "custom-logo", array(
         'height' => 139,
