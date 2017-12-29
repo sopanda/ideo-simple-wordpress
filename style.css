@@ -212,8 +212,12 @@
         padding-right: 19px;
     }
 
+    #letterWrap {
+        float: left;
+    }
+
     #email-input {
-        width: 369px;
+        width: 354px;
         border-radius: 0;
         height: 33px;
     }
@@ -225,7 +229,7 @@
     }
     
     .news-gr {
-        padding-top: 11px;
+        padding-top: 12px;
     }
 
     #btn-subscribe {
@@ -1193,7 +1197,7 @@
             margin-left: 19px;
         }
         .news-gr {
-            padding-top: 0;
+            padding-top: 9px;
         }
         #btn-subscribe {
             height: 40px;

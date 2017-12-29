@@ -47,7 +47,7 @@
                 <div class="row">
                     <div class="center-cont">
                         <div class="col-lg-10 0 col-sm-10 col-xs-10" id="form-news-sect">
-                            <div class="form-group hidden-xs">
+                            <div class="form-group hidden-xs" id="letterWrap">
                                 <img src="../img/letter.png" alt="Newsletter" class="img-responsive">
                             </div>
                             <div class="form-group news-gr">
