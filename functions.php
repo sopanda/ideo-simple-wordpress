@@ -14,7 +14,18 @@ function wp_theme_setup() {
         'width' => 189
     ));
     add_theme_support( 'widgets' );
+
+    add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
+    function carousel_slider_load_scripts( $load_scripts ) {
+
+        if ( is_front_page() ){
+            return true;
+        }
+
+        return $load_scripts;
+    }
 }
+
 
 add_action( "after_setup_theme", "wp_theme_setup");
 /* Wordpress features END */
