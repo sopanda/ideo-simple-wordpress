@@ -35,6 +35,9 @@
                 </div>
 
             </header>
+            <?php 
+                echo do_shortcode('[smartslider3 slider=5]');
+            ?>
             <!-- Navigation Ends -->
     <!-- Navigation and Header-section Ends-->
     <div class="clearfix"></div>

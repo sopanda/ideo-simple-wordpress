@@ -22,9 +22,8 @@ else {
  get_header();
 }
 ?>
-
 	<div class="wrap">
-		<div class="center-cont" style="padding-top: 100px;">
+		<div class="center-cont" style="padding-top: 20px; padding-bottom: 20px;">
 			<?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
   	
@@ -37,4 +36,4 @@ else {
 	</div>
 	<!-- .wrap -->
 
-	<?php get_footer();
+	<?php get_footer('sub');

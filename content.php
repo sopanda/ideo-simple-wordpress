@@ -9,8 +9,13 @@
                 <?php the_author(); ?>
             </a>
         </p>
-        <?php the_content(); ?>
-        
-        <p> <?php the_tags(); ?></p>
+        <div>
+            <?php the_post_thumbnail( $size = 'thumbnail'); ?>
+            <?php the_content(); ?>
+        </div>
+        <div class="clearfix"></div>
+        <p class="tags">
+            <?php the_tags(); ?>
+        </p>
     </div>
 </div>

@@ -1,9 +1,9 @@
-1) Section title can be static
-2) Aktualnoœci section - last 5 post`s carousel
-3) Kontakt section - contact form 7 plugin
-4) sidebar - could be solid menu, but if you want, you can add 2 menus
-5) main slider - worder plugin - good idea
+1) Section title can be static - done
+2) Aktualnoï¿½ci section - last 5 post`s carousel
+3) Kontakt section - contact form 7 plugin - done
+4) sidebar - could be solid menu, but if you want, you can add 2 menus - done
+5) main slider - worder plugin - good idea  -  done
 6) custom fields - all this sections:
 			- in index.php - <?php get_field ("name") ?>
-			- taki sobie sposób Angular`a - zbieramy wszysko do kupy w index.php
-7) Jaknajwiêcej edytowanych pól
+			- taki sobie sposï¿½b Angular`a - zbieramy wszysko do kupy w index.php 
+7) Jaknajwiï¿½cej edytowanych pï¿½l

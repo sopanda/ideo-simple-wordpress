@@ -19,7 +19,8 @@ else {
 			<?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();
-
+		?>
+				<?php
 			// Include the page content template.
 			get_template_part( 'template-parts/content', 'page' );
 
@@ -39,4 +40,4 @@ else {
 <!-- .wrapper-->
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer('sub'); ?>

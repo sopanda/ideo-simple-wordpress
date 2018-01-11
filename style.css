@@ -24,6 +24,17 @@
         font-weight: 100;
     }
 
+    /* POST */
+    .wp-post-image {
+        vertical-align: middle;
+        float: left;
+        padding: 15px 15px 15px 0px;
+    }
+
+    .post p {
+        line-height: 27px;
+    }
+
     #wpadminbar {
         z-index: 1000000 !important;
     }

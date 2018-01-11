@@ -70,4 +70,4 @@ get_header('new'); ?>
 	</div>
 	<!-- .wrap -->
 
-	<?php get_footer();
+	<?php get_footer('sub');
