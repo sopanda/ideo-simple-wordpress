@@ -1,4 +1,10 @@
 <?php 
+/* 
+Template name: Pojedyncza strona
+*/
+?>
+
+<?php 
 if(!is_front_page()) {
  get_header('new');
 }
@@ -7,9 +13,10 @@ else {
 }
 ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<?php
+<div class="wrapper" style="background-color: #fefefe;">
+	<div class="center-cont">
+		<main>
+			<?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();
 
@@ -25,11 +32,11 @@ else {
 		endwhile;
 		?>
 
-	</main><!-- .site-main -->
-
-	<?php get_sidebar( 'content-bottom' ); ?>
-
-</div><!-- .content-area -->
+		</main>
+		<!-- .site-main -->
+	</div>
+</div>
+<!-- .wrapper-->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
