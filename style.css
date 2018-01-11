@@ -90,6 +90,12 @@
         text-transform: capitalize;
     }
 
+    .search-query {
+        font-size: 30px;
+        color: #073f57;
+        font-style: italic;
+    }
+
     #wrap-nav .navbar-form-search {
         position: absolute;
         top: 6px;

@@ -10,9 +10,7 @@
 
 <body>
     <!-- Navigation and Header-section -->
-    <section id="header-carousel-section">
         <h4 class="h4-hidden">Just for validator warning</h4>
-        <div class="wrapper">
             <div class="side-menu">
                 <span onclick="openNav()" class="glyphicon glyphicon-play" aria-hidden="true"></span>
                 <span class="hidden-sm hidden-md hidden-xs" id="arrow-title-menu">menu</span>
@@ -38,7 +36,5 @@
 
             </header>
             <!-- Navigation Ends -->
-        </div>
-    </section>
     <!-- Navigation and Header-section Ends-->
     <div class="clearfix"></div>
