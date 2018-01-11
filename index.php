@@ -14,24 +14,34 @@
  * @since 1.0
  * @version 1.0
  */
+if(!is_front_page()) {
+ get_header('new');
+}
+else {
+ get_header();
+}
+?>
 
-get_header(); ?>
+	<div class="wrap">
+		<div class="center-cont" style="padding-top: 100px;">
+			<?php if ( is_home() && ! is_front_page() ) : ?>
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php single_post_title(); ?>
+				</h1>
+			</header>
+			<?php else : ?>
+			<header class="page-header">
+				<h2 class="page-title">
+					<?php _e( 'Posts', 'twentyseventeen' ); ?>
+				</h2>
+			</header>
+			<?php endif; ?>
 
-<div class="wrap">
-	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
-	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
-	<?php endif; ?>
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php
+					<?php
 			if ( have_posts() ) :
 
 				/* Start the Loop */
@@ -59,9 +69,13 @@ get_header(); ?>
 			endif;
 			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+				</main>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
+	<!-- .wrap -->
 
-<?php get_footer();
+	<?php get_footer();

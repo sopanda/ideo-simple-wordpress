@@ -12,20 +12,25 @@
 
 get_header('new'); ?>
 
-<div class="wrap">
-<div class="center-cont" style="padding-top: 100px;">
-	<header class="page-header">
-		<?php if ( have_posts() ) : ?>
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found for: ', 'twentyseventeen' ); printf( '<span class="search-query">' . get_search_query() . '</span>' );?></h1>
-		<?php endif; ?>
-	</header><!-- .page-header -->
+	<div class="wrap">
+		<div class="center-cont" style="padding-top: 100px;">
+			<header class="page-header">
+				<?php if ( have_posts() ) : ?>
+				<h1 class="page-title">
+					<?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?>
+				</h1>
+				<?php else : ?>
+				<h1 class="page-title">
+					<?php _e( 'Nothing Found for: ', 'twentyseventeen' ); printf( '<span class="search-query">' . get_search_query() . '</span>' );?>
+				</h1>
+				<?php endif; ?>
+			</header>
+			<!-- .page-header -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
 
-		<?php
+					<?php
 		if ( have_posts() ) :
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -47,17 +52,22 @@ get_header('new'); ?>
 
 		else : ?>
 
-			
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
-			
+
+						<p>
+							<?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?>
+						</p>
+
 			</div>
 			<?php
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+			</main>
+			<!-- #main -->
+		</div>
+		<!-- #primary -->
+		<?php get_sidebar(); ?>
+	</div>
+	<!-- .wrap -->
 
-<?php get_footer();
+	<?php get_footer();

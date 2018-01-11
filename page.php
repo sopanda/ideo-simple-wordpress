@@ -1,5 +1,10 @@
 <?php 
+if(!is_front_page()) {
  get_header('new');
+}
+else {
+ get_header();
+}
 ?>
 
 <div id="primary" class="content-area">
