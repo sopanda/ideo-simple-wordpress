@@ -12,7 +12,7 @@
             $("#search-input-container").addClass("hdn");
         });
 
-
+        console.log("nav.js - works");
 
         let width = window.innerWidth || document.body.clientWidth;
 
