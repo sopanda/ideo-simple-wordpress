@@ -23,6 +23,51 @@
         overflow-x: hidden;
         font-weight: 100;
     }
+    /* POST */
+
+    .wp-post-image {
+        vertical-align: middle;
+        float: left;
+        padding: 15px 15px 15px 0px;
+    }
+
+    .post p {
+        line-height: 27px;
+    }
+
+    .post h2 {
+        color: #073f57;
+    }
+    /* Pagination for posts search*/
+
+    .wp-pagenavi {
+        clear: both;
+        text-align: center;
+        padding-top: 36px;
+        padding-bottom: 18px;
+    }
+
+    .wp-pagenavi a,
+    .wp-pagenavi span {
+        color: #fefefe;
+        text-decoration: none;
+        background-color: #073f57;
+        border: 1px solid #005f88;
+        padding: 5px 5px;
+        margin: 2px;
+    }
+
+    .wp-pagenavi a:hover,
+    .wp-pagenavi span.current {
+        border-color: #E9F2F9;
+        background-color: #005f88;
+    }
+
+    .wp-pagenavi span.current {
+        font-weight: bold;
+        background-color: #005f88;
+        cursor: pointer;
+    }
 
     .title-icon {
         float: none !important;
@@ -49,9 +94,22 @@
     }
     /* Pagination for posts */
 
+    .pt-cv-title a {
+        color: #073f57;
+    }
+
+    .pt-cv-title a:hover {
+        color: #005f88;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+    }
+
     .pt-cv-pagination-wrapper {
         clear: both;
-        text-align: center;
+        text-align: right;
         padding-top: 36px;
         padding-bottom: 18px;
     }
@@ -80,6 +138,11 @@
         background-color: #005f88;
         cursor: pointer;
         color: #fefefe;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
     }
 
     .pt-cv-wrapper .pagination>.active>a,
@@ -91,12 +154,26 @@
         border: 1px solid #005f88;
         background-color: #005f88;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
     }
 
     .pt-cv-readmore {
         color: #fefefe!important;
         background-color: #073f57 !important;
         border: none !important;
+    }
+
+    .pt-cv-readmore:hover {
+        background-color: #005f88 !important;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
     }
     /* NAVIGATION BAR */
 
@@ -849,70 +926,8 @@
         cursor: pointer;
     }
 
-    .slider-actual img {
-        width: auto;
-    }
-
     #aktualnosci-section .row {
         margin-top: 138px;
-    }
-
-    #aktualnosci-section .slick-prev {
-        left: -10%;
-        top: 52%;
-    }
-
-    #aktualnosci-section .slick-next {
-        right: -10%;
-        top: 52%;
-    }
-
-    .slider-actual img.a-left.control-c.prev.slick-prev.slick-arrow {
-        height: 41px;
-    }
-
-    .slider-actual img.a-right.control-c.next.slick-next.slick-arrow {
-        height: 41px;
-    }
-
-    .content-slider-wrap-actual {
-        color: #073f57;
-    }
-
-    .date {
-        padding-top: 33px;
-    }
-
-    .cont-info {
-        line-height: 14px;
-        padding-left: 3px;
-    }
-
-    .cont-info a {
-        font-size: 12px;
-        color: #073f57;
-    }
-
-    .cont-info p {
-        font-size: 11px;
-        padding-bottom: 12px;
-    }
-
-    .cont-info h5 {
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-
-    .slider-actual .hr-slider-act {
-        color: #073f57;
-        border-top: dotted 2px #073f57;
-        width: 51px;
-        margin: 0;
-        padding-bottom: 13px;
-    }
-
-    .articles-uslugi div:last-child {
-        word-spacing: 6px;
     }
     /* Contact info */
 
@@ -1570,50 +1585,6 @@
         #aktualnosci-section .row {
             margin-top: 63px;
         }
-        .date {
-            padding-top: 16px;
-            padding-left: 23px;
-            font-size: 10px;
-        }
-        .cont-info h5 {
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 11px;
-            margin-top: 2px;
-            padding-left: 23px;
-        }
-        .slider-actual .hr-slider-act {
-            margin-left: 23px;
-        }
-        .cont-info a {
-            font-size: 9px;
-            color: #073f57;
-            text-transform: lowercase;
-            padding-left: 23px;
-        }
-        .slider-actual img {
-            margin-top: 15px;
-            height: 112px;
-            width: 112px;
-            margin-right: 0;
-            margin-left: 23px;
-        }
-        #aktualnosci-section .slick-prev {
-            left: -7%;
-            top: 53%;
-        }
-        .slider-actual img.a-left.control-c.prev.slick-prev.slick-arrow {
-            height: 26px;
-            width: auto;
-        }
-        #aktualnosci-section .slick-next {
-            right: -6%;
-            top: 54%;
-        }
-        .slider-actual img.a-right.control-c.next.slick-next.slick-arrow {
-            height: 26px;
-            width: auto;
-        }
         /* Kontakt */
         #contact-section {
             height: 379px;
@@ -2177,57 +2148,6 @@
         }
         #aktualnosci-section .row {
             margin-top: 0;
-        }
-        #aktualnosci-section .slick-next {
-            right: -10%;
-            top: 24%;
-        }
-        .slider-actual img.a-right.control-c.next.slick-next.slick-arrow {
-            height: 34px;
-        }
-        #aktualnosci-section .slick-prev {
-            left: -8%;
-            top: 25%;
-        }
-        .slider-actual img.a-left.control-c.prev.slick-prev.slick-arrow {
-            height: 34px;
-        }
-        .content-slider-wrap-actual {
-            color: #073f57;
-            text-align: left;
-            height: 343px;
-        }
-        #aktualnosci-section .hr-region {
-            margin-bottom: 35px;
-            margin-top: 14px;
-        }
-        #aktualnosci-section .content-slider-wrap-actual img {
-            width: auto;
-            height: 166px;
-            padding-left: 44px;
-        }
-        #aktualnosci-section .slick-prev {
-            left: -8%;
-            top: 25%;
-        }
-        .cont-info h5 {
-            text-transform: uppercase;
-            font-weight: bold;
-            text-align: center;
-            font-size: 17px;
-            padding-top: 3px;
-            margin-bottom: 16px;
-        }
-        .cont-info p {
-            font-size: 12px;
-            padding-bottom: 0px;
-            height: 91px;
-            text-align: justify;
-        }
-        .date {
-            padding-top: 15px;
-            text-align: center;
-            font-size: 15px;
         }
         /* KONTAKT SECTION MOBILE */
         #contact-section {
