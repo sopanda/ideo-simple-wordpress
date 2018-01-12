@@ -29,22 +29,36 @@ get_header('new'); ?>
 			<div>
 				<main>
 					<?php
-						if ( have_posts() ) :
-						while ( have_posts() ) : the_post();
-							get_template_part( 'template-parts/post/content', 'excerpt' );
-						endwhile; 
-							wp_pagenavi();
-						else : ?>
-						<p>
-							<?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.'); ?>
-						</p>
+					while ( have_posts() ) : the_post();
+					?>
+						<div class="center-cont">
+							<div class="post">
+								<h2>
+									<?php the_title(); ?>
+								</h2>
+								<p>
+									<?php echo get_the_date() ?> by
+									<a href="#">
+										<?php the_author(); ?>
+									</a>
+								</p>
+								<div>
+									<?php the_post_thumbnail( $size = 'thumbnail'); ?>
+									<?php the_content(); ?>
+								</div>
+								<div class="clearfix"></div>
+								<p class="tags">
+									<?php the_tags(); ?>
+								</p>
+							</div>
+						</div>
+						<?php
+					endwhile;
+					wp_pagenavi();
+				?>
+				</main>
 			</div>
-			<?php
-		endif;
-		?>
-			</main>
+			<?php get_sidebar(); ?>
 		</div>
-		<?php get_sidebar(); ?>
-	</div>
 
-	<?php get_footer('sub');
+		<?php get_footer('sub'); ?>
