@@ -35,8 +35,40 @@
         line-height: 27px;
     }
 
+    .post h2 {
+        color: #073f57;
+    }
+
     #wpadminbar {
         z-index: 1000000 !important;
+    }
+
+    /* Pagination for posts */
+    .wp-pagenavi {
+        clear: both;
+        text-align: center;
+        padding-top: 36px;
+        padding-bottom: 18px;
+    }
+     
+    .wp-pagenavi a, .wp-pagenavi span {
+        color: #fefefe;
+        text-decoration: none;
+        background-color: #073f57; 
+        border: 1px solid #005f88;
+        padding: 5px 5px;
+        margin: 2px;
+    }
+     
+    .wp-pagenavi a:hover, .wp-pagenavi span.current {
+        border-color: #E9F2F9;
+        background-color:#005f88;
+    }
+     
+    .wp-pagenavi span.current {
+        font-weight: bold;
+        background-color:#005f88;
+        cursor: pointer;
     }
 
     /* NAVIGATION BAR */

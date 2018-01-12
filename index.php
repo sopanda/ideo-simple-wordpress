@@ -14,13 +14,12 @@
  * @since 1.0
  * @version 1.0
  */
-
-if(!is_front_page()) {
- get_header('new');
-}
-else {
- get_header();
-}
+	if(!is_front_page()) {
+	get_header('new');
+	}
+	else {
+	get_header();
+	}
 ?>
 	<div class="wrap">
 		<div class="center-cont" style="padding-top: 20px; padding-bottom: 20px;">
@@ -28,12 +27,14 @@ else {
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
   	
 				get_template_part( 'content', get_post_format() );
-  
+	
 			endwhile; endif; 
 			?>
+			<?php wp_pagenavi(); ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
+
 	<!-- .wrap -->
 
 	<?php get_footer('sub');
