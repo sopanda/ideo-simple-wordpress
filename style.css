@@ -39,24 +39,9 @@
     }
 
     .subpage-title {
-        color: #073f57; 
+        color: #073f57;
         padding-left: 0;
         text-transform: uppercase;
-    }
-    /* POST */
-
-    .wp-post-image {
-        vertical-align: middle;
-        float: left;
-        padding: 15px 15px 15px 0px;
-    }
-
-    .post p {
-        line-height: 27px;
-    }
-
-    .post h2 {
-        color: #073f57;
     }
 
     #wpadminbar {
@@ -64,33 +49,54 @@
     }
     /* Pagination for posts */
 
-    .wp-pagenavi {
+    .pt-cv-pagination-wrapper {
         clear: both;
         text-align: center;
         padding-top: 36px;
         padding-bottom: 18px;
     }
 
-    .wp-pagenavi a,
-    .wp-pagenavi span {
+    .pt-cv-wrapper .pagination>li:first-child>a,
+    .pt-cv-wrapper .pagination>li:first-child>span,
+    .pt-cv-wrapper .pagination>li:last-child>a,
+    .pt-cv-wrapper .pagination>li:last-child>span {
+        background-color: #073f57;
+        color: #fefefe;
+        cursor: pointer;
+    }
+
+    .pt-cv-wrapper .pagination>li>a,
+    .pt-cv-wrapper .pagination>li>span {
         color: #fefefe;
         text-decoration: none;
         background-color: #073f57;
         border: 1px solid #005f88;
-        padding: 5px 5px;
-        margin: 2px;
+        cursor: pointer;
     }
 
-    .wp-pagenavi a:hover,
-    .wp-pagenavi span.current {
-        border-color: #E9F2F9;
-        background-color: #005f88;
-    }
-
-    .wp-pagenavi span.current {
-        font-weight: bold;
+    .pt-cv-wrapper .pagination>li>a:hover,
+    .pt-cv-wrapper .pagination>li>span:hover {
+        border: 1px solid #005f88;
         background-color: #005f88;
         cursor: pointer;
+        color: #fefefe;
+    }
+
+    .pt-cv-wrapper .pagination>.active>a,
+    .pt-cv-wrapper .pagination>.active>a:focus,
+    .pt-cv-wrapper .pagination>.active>a:hover,
+    .pt-cv-wrapper .pagination>.active>span,
+    .pt-cv-wrapper .pagination>.active>span:focus,
+    .pt-cv-wrapper .pagination>.active>span:hover {
+        border: 1px solid #005f88;
+        background-color: #005f88;
+        cursor: pointer;
+    }
+
+    .pt-cv-readmore {
+        color: #fefefe!important;
+        background-color: #073f57 !important;
+        border: none !important;
     }
     /* NAVIGATION BAR */
 

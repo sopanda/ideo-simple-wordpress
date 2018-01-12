@@ -47,14 +47,7 @@
 
 	<div class="wrap">
 		<div class="center-cont" style="padding-top: 20px; padding-bottom: 20px;">
-			<?php 
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
-  	
-				get_template_part( 'content', get_post_format() );
-	
-			endwhile; endif; 
-			?>
-			<?php wp_pagenavi(); ?>
+			<?php echo do_shortcode("[pt_view id=0c31265ga4]"); ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
