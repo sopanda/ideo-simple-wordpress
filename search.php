@@ -13,61 +13,38 @@
 get_header('new'); ?>
 
 	<div class="wrap">
-		<div class="center-cont" style="padding-top: 100px;">
-			<header class="page-header">
+		<div class="center-cont" style="padding-top: 20px; padding-bottom: 20px; min-height: 270px;">
+			<header>
 				<?php if ( have_posts() ) : ?>
-				<h1 class="page-title">
-					<?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?>
-				</h1>
+				<h3>
+					<?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span class="search-query">' . get_search_query() . '</span>' ); ?>
+				</h3>
 				<?php else : ?>
-				<h1 class="page-title">
-					<?php _e( 'Nothing Found for: ', 'twentyseventeen' ); printf( '<span class="search-query">' . get_search_query() . '</span>' );?>
-				</h1>
+				<h3>
+					<?php _e( 'Nothing Found for: '); printf( '<span class="search-query">' . get_search_query() . '</span>' );?>
+				</h3>
 				<?php endif; ?>
 			</header>
-			<!-- .page-header -->
 
-			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main">
-
+			<div>
+				<main>
 					<?php
-		if ( have_posts() ) :
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/post/content', 'excerpt' );
-
-			endwhile; // End of the loop.
-
-			the_posts_pagination( array(
-				'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-			) );
-
-		else : ?>
-
-
+						if ( have_posts() ) :
+						while ( have_posts() ) : the_post();
+							get_template_part( 'template-parts/post/content', 'excerpt' );
+						endwhile; 
+							wp_pagenavi();
+						else : ?>
 						<p>
-							<?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?>
+							<?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.'); ?>
 						</p>
-
 			</div>
 			<?php
 		endif;
 		?>
-
 			</main>
-			<!-- #main -->
 		</div>
-		<!-- #primary -->
 		<?php get_sidebar(); ?>
 	</div>
-	<!-- .wrap -->
 
 	<?php get_footer('sub');

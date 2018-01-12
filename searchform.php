@@ -5,7 +5,7 @@
                 <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </button>
             <div class="form-group">
-                <input type="text" value="<?php echo get_search_query(); ?>" name="s" class="form-control" id="search_input" placeholder="Search for..." autofocus>
+                <input type="text" value="<?php echo get_search_query(); ?>" name="s" class="form-control" id="search_input" placeholder="Search for..." autofocus onblur="this.focus()">
             </div>
 
         </div>
