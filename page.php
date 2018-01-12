@@ -15,11 +15,11 @@ else {
 
 <div class="wrapper" style="background-color: #fefefe;">
 	<div class="center-cont">
-		<main>	
-		<?php
+		<main>
+			<?php
 			while ( have_posts() ) : the_post();
 		?>
-		<?php
+				<?php
 			get_template_part( 'template-parts/content', 'page' );
 			if ( comments_open() || get_comments_number() ) {
 				comments_template();

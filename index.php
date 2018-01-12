@@ -21,18 +21,30 @@
 	get_header();
 	}
 ?>
-	<div>
-		<?php
-			$args = array(
-				'post_type' => 'page',
-				'post_status' => 'publish'
-			); 
-			$pages = get_pages($args); 
-			foreach($pages as $page) {
-					echo get_the_post_thumbnail( $page->ID, 'full' );
-			}
-		?>
+
+	<div class="center-cont">
+		<div class="text-center">
+			<h2 class="subpage-h2">
+				<?php
+					$args = array(
+						'post_type' => 'page',
+						'post_status' => 'publish'
+					); 
+					$pages = get_pages($args); 
+					foreach($pages as $page) {
+							echo get_the_post_thumbnail( 
+								$page->ID, 'full',
+								array('class' => 'title-icon')
+						 );
+					}
+				?>
+					<span class="subpage-title">
+						<?php single_post_title(); ?>
+					</span>
+			</h2>
+		</div>
 	</div>
+
 	<div class="wrap">
 		<div class="center-cont" style="padding-top: 20px; padding-bottom: 20px;">
 			<?php 
