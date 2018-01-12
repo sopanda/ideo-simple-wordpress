@@ -4,6 +4,7 @@
             if ($("#search-input-container").hasClass("hdn")) {
                 e.preventDefault();
                 $("#search-input-container").removeClass("hdn");
+                $( "#search_input" ).focus();
             }
         });
 
