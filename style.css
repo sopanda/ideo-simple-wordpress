@@ -2025,6 +2025,7 @@
         .circle-block .row p {
             margin-top: 0;
             transform: none;
+            margin-bottom: 10px;
         }
         .circle-block {
             position: static;
