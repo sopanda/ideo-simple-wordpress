@@ -31,10 +31,12 @@ get_header('new'); ?>
 					<?php
 					while ( have_posts() ) : the_post();
 					?>
-						<div class="center-cont">
+						<div class="posts-wrap">
 							<div class="post">
 								<h2>
-									<?php the_title(); ?>
+									<a href="<?php echo get_permalink(); ?>">
+										<?php the_title(); ?>
+									</a>
 								</h2>
 								<p>
 									<?php echo get_the_date() ?> by
@@ -43,8 +45,10 @@ get_header('new'); ?>
 									</a>
 								</p>
 								<div>
-									<?php the_post_thumbnail( $size = 'thumbnail'); ?>
-									<?php the_content(); ?>
+									<a href="<?php echo get_permalink(); ?>" class="img-link">
+										<?php the_post_thumbnail( $size = 'thumbnail'); ?>
+									</a>
+									<?php the_excerpt(); ?>
 								</div>
 								<div class="clearfix"></div>
 								<p class="tags">

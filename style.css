@@ -27,7 +27,6 @@
 
     .wp-post-image {
         vertical-align: middle;
-        float: left;
         padding: 15px 15px 15px 0px;
     }
 
@@ -49,10 +48,10 @@
         border-bottom: 1px dashed #023a5c;
     }
 
-    .post-image-wrap img{
+    .post-image-wrap img {
         float: none;
         vertical-align: middle;
-        height: auto; 
+        max-height: 247px;
         width: auto;
     }
 
@@ -71,6 +70,20 @@
 
     .subpage-h2 {
         cursor: pointer;
+    }
+
+    .post a {
+        color: #073f56;
+        text-decoration: none;
+    }
+
+    .img-link {
+        float: left;
+    }
+    /* Aktualności carousel */
+
+    .light-theme.wp-posts-carousel .wp-posts-carousel-image img {
+        border-radius: 50%;
     }
     /* Pagination for posts search*/
 
