@@ -51,6 +51,9 @@
 
     .post-image-wrap img{
         float: none;
+        vertical-align: middle;
+        height: auto; 
+        width: auto;
     }
 
     .post-image-wrap {
@@ -205,6 +208,13 @@
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
+    }
+
+    .pt-cv-wrapper img {
+        vertical-align: middle;
+        height: 156px;
+        border-radius: 50%;
+        width: auto;
     }
     /* NAVIGATION BAR */
 
