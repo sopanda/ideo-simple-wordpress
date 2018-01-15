@@ -12,26 +12,64 @@
 
 get_header('new'); ?>
 
-<div class="wrap">
-	<div>
-		<main>
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+	<div class="wrap">
+		<div>
+			<main>
+				<div class="center-cont">
+					<div class="text-center">
+						<h2 class="subpage-h2" style="border: none;">
+							<?php
+					$args = array(
+						'post_type' => 'page',
+						'post_status' => 'publish'
+					); 
+					$pages = get_pages($args); 
+					foreach($pages as $page) {
+							echo get_the_post_thumbnail( 
+								$page->ID, 'full',
+								array('class' => 'title-icon')
+						 );
+					}
+				?>
+								<span class="subpage-title">
+									Aktualności
+								</span>
+						</h2>
+					</div>
+				</div>
 
-				get_template_part( 'template-parts/post/content', get_post_format() );
+				<div class="center-cont">
+					<div class="text-center">
+						<h4 class="single-title">
+							<?php echo get_the_date() ?> -
+							<?php the_title(); ?>
+						</h4>
+					</div>
+				</div>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+				<div class="center-cont">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="content-post">
+								<div class="post-image-wrap">
+									<?php the_post_thumbnail( $size = 'large'); ?>
+								</div>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+									the_content(); 
+									endwhile; 
+									endif;
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			endwhile; // End of the loop.
-			?>
+			</main>
+			<!-- #main -->
+		</div>
+		<!-- #primary -->
+		<?php get_sidebar(); ?>
+	</div>
+	<!-- .wrap -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
-
-<?php get_footer();
+	<?php get_footer('sub');

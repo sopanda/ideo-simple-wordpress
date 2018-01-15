@@ -38,6 +38,37 @@
     .post h2 {
         color: #073f57;
     }
+
+    .single-title {
+        margin-top: 4px;
+        margin-bottom: 57px;
+        color: #023a5c;
+        height: 81px;
+        line-height: 74px;
+        border-top: 1px dashed #023a5c;
+        border-bottom: 1px dashed #023a5c;
+    }
+
+    .post-image-wrap img{
+        float: none;
+    }
+
+    .post-image-wrap {
+        text-align: center;
+        padding-bottom: 22px;
+    }
+
+    .content-post {
+        column-count: 2;
+        -webkit-column-gap: 22px;
+        -moz-column-gap: 22px;
+        column-gap: 22px;
+        margin-bottom: 50px;
+    }
+
+    .subpage-h2 {
+        cursor: pointer;
+    }
     /* Pagination for posts search*/
 
     .wp-pagenavi {

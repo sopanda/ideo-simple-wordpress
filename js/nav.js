@@ -18,6 +18,10 @@
             window.location = "http://wp-szkolenie-3.t.ideo/wordpress/aktualnosci/";
         });
 
+        $(".subpage-h2").on("click", function (e) {
+            e.preventDefault();
+            window.location = "http://wp-szkolenie-3.t.ideo/wordpress/aktualnosci/";
+        });
         console.log("nav.js - works");
 
         let width = window.innerWidth || document.body.clientWidth;
