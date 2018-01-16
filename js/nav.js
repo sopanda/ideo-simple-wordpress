@@ -48,8 +48,11 @@
         /* MAGIC FOR READ MORE BTN */
 
         var moreBtn = $('<a href="#">Więcej</a>').addClass("more");
-
         moreBtn.insertAfter("#id-310 .owl-item .carousel-slider__post-excerpt");
+
+        $(".more").each(function(index){
+            $(this).wrap( "<div class='moreWrap'></div>" )
+        });
 
         let hrefs = [];
         $(".carousel-slider__post-title").each(function (index) {
