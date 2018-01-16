@@ -44,6 +44,10 @@
                 'margin-bottom': "-62px"
             });
         }
+
+        // var lnk = $(".carousel-slider__post-title").attr('href');
+        // $('<a>Więcej</a>').insertAfter(".carousel-slider__post-excerpt").attr("href", lnk);
+
     });
 })(jQuery);
 
