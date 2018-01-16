@@ -198,6 +198,10 @@
     }
     /* Pagination for posts */
 
+    .pt-cv-wrapper {
+        margin-top: 24px;
+    }
+    
     .pt-cv-title a {
         color: #073f57;
     }
