@@ -32,6 +32,7 @@
 
     .post p {
         line-height: 27px;
+        max-width: 455px;
     }
 
     .post h2 {
@@ -82,9 +83,65 @@
     }
     /* Aktualności carousel */
 
-    .light-theme.wp-posts-carousel .wp-posts-carousel-image img {
-        border-radius: 50%;
+    /* a.carousel-slider__post-image {
+        background-size: 190px 190px !important;
+        background: no-repeat center center;
+    } */
+
+    .carousel-slider__post-title h1 {
+        font-family: 'OpenSans' !important;
+        text-transform: uppercase;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        color: #184c62 !important;
+        padding-top: 26px !important;
     }
+
+    .carousel-slider__post-excerpt {
+        color: #184c62 !important;
+        font-size: 13px !important;
+        line-height: 1 !important;
+        padding: 3px 15px 5px !important;
+        line-height: 1.2 !important;
+        padding: 5px 15px 5px !important;
+        position: static !important;
+    }
+
+    .carousel-slider__post, .carousel-slider__post-image {
+        border: none !important;
+    }
+    
+    .carousel-slider__post-image {
+        height: 190px !important;
+        width: 94% !important; 
+        z-index: 1000 !important;
+        position: relative;
+    }
+
+    .carousel-slider__post-meta {
+        top: 169px !important;
+        background: transparent;
+        z-index: 1 !important;
+        color: #184c62 !important;
+        height: 40px !important;
+    }
+    
+    .carousel-slider__post-category, .carousel-slider__post-author {
+        display: none !important;
+    }
+
+    #id-310.arrows-outside .owl-prev {
+        left: -105px !important;
+        margin-top: 10px !important;
+    }
+
+    #id-310.arrows-outside .owl-next {
+        right: -98px !important;
+        margin-top: 10px !important;
+    }
+    
+    
+
     /* Pagination for posts search*/
 
     .wp-pagenavi {
@@ -981,7 +1038,7 @@
     }
 
     #aktualnosci-section .row {
-        margin-top: 138px;
+        margin-top: 103px;
     }
     /* Contact info */
 
