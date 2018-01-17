@@ -1981,6 +1981,10 @@
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
+        .content-post {
+            column-count: 1;
+        }
+        
         .subpage-title {
             font-size: 20px;
         }

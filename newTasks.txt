@@ -1,4 +1,4 @@
-1) responsive views for all pages (from 2 colums to 1, for example)
+1) responsive views for all pages (from 2 colums to 1, for example) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
 2) subscibe form via Contact 7
 3) add search input on search results page
 4) create all pages from menus and responsive view ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
