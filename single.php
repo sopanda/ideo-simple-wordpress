@@ -18,19 +18,6 @@ get_header('new'); ?>
 				<div class="center-cont">
 					<div class="text-center">
 						<h2 class="subpage-h2" style="border: none;">
-							<?php
-					$args = array(
-						'post_type' => 'page',
-						'post_status' => 'publish'
-					); 
-					$pages = get_pages($args); 
-					foreach($pages as $page) {
-							echo get_the_post_thumbnail( 
-								$page->ID, 'full',
-								array('class' => 'title-icon')
-						 );
-					}
-				?>
 								<span class="subpage-title">
 									Aktualności
 								</span>

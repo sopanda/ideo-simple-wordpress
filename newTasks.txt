@@ -1,7 +1,7 @@
 1) responsive views for all pages (from 2 colums to 1, for exapmle)
 2) subscibe form via Contact 7
 3) add search input on search results page
-4) create all pages from menus
+4) create all pages from menus and responsive view ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
 5) carousel on mobile devices for kontakt field
 6) Contact 7 errors - left or right -> not down
-7) all pages with lorem ipsum kontent
+7) all pages with lorem ipsum kontent and responsive view ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
