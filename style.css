@@ -24,6 +24,11 @@
         font-weight: 100;
     }
 
+    .subpage-h2 img {
+        height: auto;
+        margin-right: 2px;
+        width: 58px;
+    }
     .sub-search-exist {
         float: right;
     }
@@ -90,6 +95,10 @@
         margin-top: 24px !important;
         margin-bottom: 24px !important;
         column-count: 2;
+    }
+
+    .subpage-h2-not-post img {
+        margin-right: 6px;
     }
     /* POST */
 
@@ -1355,6 +1364,12 @@
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
+        
+        .subpage-h2-not-post img, .subpage-h2 img {
+            height: auto;
+            width: 46px;
+        }
+
         .sub-search-btn {
             height: 33px;
         }
@@ -2038,6 +2053,14 @@
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
+        
+        
+        .subpage-h2-not-post img, .subpage-h2 img {
+            margin-right: 1px;
+            height: auto;
+            width: 34px;
+        }
+        
         .sub-search-btn, .sub-search-btn-exist {
             width: 81px;
         }

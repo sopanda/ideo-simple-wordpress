@@ -18,6 +18,10 @@ get_header('new'); ?>
 				<div class="center-cont">
 					<div class="text-center">
 						<h2 class="subpage-h2" style="border: none;">
+						<img src="<?php 
+							$post_id = 257;
+							the_field('icon_for_title', $post_id); 
+						?>" alt="icon">
 								<span class="subpage-title">
 									Aktualności
 								</span>

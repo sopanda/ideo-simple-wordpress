@@ -19,6 +19,7 @@ else {
 			<div class="center-cont">
 				<div class="text-center">
 					<h2 class="subpage-h2-not-post">
+					<img src="<?php the_field('icon_for_title'); ?>" alt="icon">
 						<span class="subpage-title">
 							<?php echo get_the_title(); ?>
 						</span>
