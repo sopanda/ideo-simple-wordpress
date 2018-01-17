@@ -13,15 +13,33 @@
             $("#search-input-container").addClass("hdn");
         });
 
+
+        /* Page redirections */
         $("#aktualnosci-logo").on("click", function (e) {
             e.preventDefault();
             window.location = "http://wp-szkolenie-3.t.ideo/wordpress/aktualnosci/";
         });
-
+        $("#branze-logo").on("click", function (e) {
+            e.preventDefault();
+            window.location = "http://wp-szkolenie-3.t.ideo/wordpress/branze/";
+        });
+        $("#product-logo").on("click", function (e) {
+            e.preventDefault();
+            window.location = "http://wp-szkolenie-3.t.ideo/wordpress/produkty/";
+        });
+        $("#uslugi-logo").on("click", function (e) {
+            e.preventDefault();
+            window.location = "http://wp-szkolenie-3.t.ideo/wordpress/uslugi/";
+        });
+        $("#kontakt-logo").on("click", function (e) {
+            e.preventDefault();
+            window.location = "http://wp-szkolenie-3.t.ideo/wordpress/kontakt/";
+        });
         $(".subpage-h2").on("click", function (e) {
             e.preventDefault();
             window.location = "http://wp-szkolenie-3.t.ideo/wordpress/aktualnosci/";
         });
+        
         
         console.log("nav.js - works");
 
