@@ -12,6 +12,28 @@ if (!is_admin()) {
     add_filter('pre_get_posts','wpb_search_filter');
 }
 
+/* extra search form */
+function non_post_search_form( $form ) {
+    $form = '<form role="search" method="get" action="'. home_url( '/' ) .'">';
+    $form .= '<label class="sub-search-label">Spróbuj ponownie</label>';
+    $form .= '<div class="form-group">';
+    $form .= '<input name="s" class="form-control" type="text" placeholder="Search">';
+    $form .= '<input type="submit" value="Szukaj" class="btn btn-primary sub-search-btn">';
+    $form .= '</div>';
+    $form .= '</form>';
+    return $form;
+}
+
+function post_search_form( $form ) {
+    $form = '<form role="search" class="form-inline" method="get" action="'. home_url( '/' ) .'">';
+    $form .= '<div class="form-group">';
+    $form .= '<input name="s" class="form-control" type="text" placeholder="Search">';
+    $form .= '<input type="submit" value="Szukaj" class="btn btn-primary sub-search-btn">';
+    $form .= '</div>';
+    $form .= '</form>';
+    return $form;
+}
+
 function wp_theme_setup() {
 
     load_theme_textdomain( "simple" );

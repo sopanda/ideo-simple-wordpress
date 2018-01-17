@@ -17,11 +17,28 @@ get_header('new'); ?>
 			<header>
 				<?php if ( have_posts() ) : ?>
 				<h3>
-					<?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span class="search-query">' . get_search_query() . '</span>' ); ?>
+					<?php printf( __( '<span class="search-result-title">Search Results for: %s </span>' ), '<span class="search-query">' . get_search_query() . '</span>' ); ?>
+					<div class="sub-search-exist">
+						<?php 
+							add_filter( 'get_search_form', 'post_search_form' );
+							get_search_form();
+							remove_filter( 'get_search_form', 'post_search_form' );
+						?>
+					</div>
 				</h3>
 				<?php else : ?>
 				<h3>
-					<?php _e( 'Nothing Found for: '); printf( '<span class="search-query">' . get_search_query() . '</span>' );?>
+					<?php 
+					_e( '<span class="search-result-title">Nothing Found for: </span>'); 
+					printf( '<span class="search-query">' . get_search_query() . '</span>' );
+					?>
+					<div class="sub-search-non-exist">
+						<?php 
+							add_filter( 'get_search_form', 'non_post_search_form' );
+							get_search_form();
+							remove_filter( 'get_search_form', 'non_post_search_form' );
+						?>
+					</div>
 				</h3>
 				<?php endif; ?>
 			</header>
@@ -29,6 +46,7 @@ get_header('new'); ?>
 			<main>
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+					<?php if ( have_posts() ) : ?>
 						<?php
 					while ( have_posts() ) : the_post();
 					?>
@@ -58,9 +76,11 @@ get_header('new'); ?>
 								</div>
 							</div>
 							<?php
-					endwhile;
+					endwhile;	
 					wp_pagenavi();
 				?>
+				<?php else : ?>
+				<?php endif; ?>
 					</div>
 				</div>
 			</main>

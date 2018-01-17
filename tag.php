@@ -6,11 +6,19 @@
     <div class="center-cont" style="padding-top: 20px; padding-bottom: 20px; min-height: 270px;">
         <header>
             <h3>
-                Tag archives for:
+                <span class="search-result-title">
+                    Tag archives for:
+                </span>
                 <span class="search-query">
                     <?php single_tag_title(); ?>
                 </span>
-            </h3>
+                <div class="sub-search-exist">
+                    <?php 
+							add_filter( 'get_search_form', 'post_search_form' );
+							get_search_form();
+							remove_filter( 'get_search_form', 'post_search_form' );
+						?>
+                </div>
             </h3>
         </header>
         <div>
