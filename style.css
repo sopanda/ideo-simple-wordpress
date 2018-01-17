@@ -1113,6 +1113,15 @@
     textarea:-ms-input-placeholder {
         text-align: right;
     }
+
+    #contact-section .form-group input[type=text],
+    #contact-section .form-group input[type=email],
+    #contact-section .form-group input[type=tel],
+    #contact-section .form-group textarea
+     {
+        text-align: right;
+    }
+    
     /* /PLACEHOLDER ALIGN */
 
     .check-group-contact {
