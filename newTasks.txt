@@ -3,6 +3,6 @@
 3) add search input on search results page
 4) create all pages from menus and responsive view ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
 5) carousel on mobile devices for kontakt field
-6) Contact 7 errors - left or right -> not down
+6) Contact 7 errors - left or right -> not down ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
 7) all pages with lorem ipsum kontent and responsive view ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
 8) search result responsive normal view (without chases) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DONE
