@@ -22,6 +22,7 @@
             e.preventDefault();
             window.location = "http://wp-szkolenie-3.t.ideo/wordpress/aktualnosci/";
         });
+        
         console.log("nav.js - works");
 
         let width = window.innerWidth || document.body.clientWidth;
@@ -36,6 +37,7 @@
             $('div#n2-ss-2 .n2-ss-control-bullet').css({
                 'display': 'none'
             });
+
         } else if (width >= 320 && width < 768) {
             $('div#n2-ss-2 .nextend-bullet-bar').wrap('<div class="dotsWrapMobile"></div');
             $('.dotsWrapMobile').css({

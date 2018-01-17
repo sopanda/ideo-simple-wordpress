@@ -1298,6 +1298,14 @@
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
+        .posts-wrap:nth-child(even) {
+            float: none !important;
+        }
+
+        .posts-wrap:nth-child(odd) {
+            float: none !important;
+        }
+        
         .subpage-h2, .subpage-h2-not-post {
             height: 87px;
             line-height: 90px;

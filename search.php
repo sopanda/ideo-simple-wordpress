@@ -26,42 +26,44 @@ get_header('new'); ?>
 				<?php endif; ?>
 			</header>
 
-			<div>
-				<main>
-					<?php
+			<main>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+						<?php
 					while ( have_posts() ) : the_post();
 					?>
-						<div class="posts-wrap">
-							<div class="post">
-								<h2>
-									<a href="<?php echo get_permalink(); ?>">
-										<?php the_title(); ?>
-									</a>
-								</h2>
-								<p>
-									<?php echo get_the_date() ?> by
-									<a href="#">
-										<?php the_author(); ?>
-									</a>
-								</p>
-								<div>
-									<a href="<?php echo get_permalink(); ?>" class="img-link">
-										<?php the_post_thumbnail( $size = 'thumbnail'); ?>
-									</a>
-									<?php the_excerpt(); ?>
+							<div class="posts-wrap">
+								<div class="post">
+									<h2>
+										<a href="<?php echo get_permalink(); ?>">
+											<?php the_title(); ?>
+										</a>
+									</h2>
+									<p>
+										<?php echo get_the_date() ?> by
+										<a href="#">
+											<?php the_author(); ?>
+										</a>
+									</p>
+									<div>
+										<a href="<?php echo get_permalink(); ?>" class="img-link">
+											<?php the_post_thumbnail( $size = 'thumbnail'); ?>
+										</a>
+										<?php the_excerpt(); ?>
+									</div>
+									<div class="clearfix"></div>
+									<p class="tags">
+										<?php the_tags(); ?>
+									</p>
 								</div>
-								<div class="clearfix"></div>
-								<p class="tags">
-									<?php the_tags(); ?>
-								</p>
 							</div>
-						</div>
-						<?php
+							<?php
 					endwhile;
 					wp_pagenavi();
 				?>
-				</main>
-			</div>
+					</div>
+				</div>
+			</main>
 			<?php get_sidebar(); ?>
 		</div>
 
