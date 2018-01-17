@@ -45,6 +45,19 @@
             });
         }
 
+        $( ".posts-wrap:even" ).css( {
+            "float":"left",
+            "display":"block"
+        });
+
+        $( ".posts-wrap:odd" ).css( {
+            "float":"right",
+            "display":"block"
+        });
+
+        $( "<div class='clearfix'></div> ").insertAfter(".posts-wrap:odd");
+
+
         /* MAGIC FOR READ MORE BTN */
 
         var moreBtn = $('<a href="#">Więcej</a>').addClass("more");
