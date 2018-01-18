@@ -85,49 +85,8 @@ else {
             </div>
             <div class="center-cont">
                 <div class="row">
-                    <div class="col-lg-12 col-sm-12 wrap-location col-xs-12 owl-carousel" id="contact-carousel">
-                        <article class="location">
-                            <h4 class="h4-hidden">Just for validator warning</h4>
-                            <p>
-                                SIMPLE S.A.
-                                <br>
-                                <br> ul. Bronisława Czecha 49/51
-                                <br> 04-555 Warszawa
-                                <br>
-                                <br> tel.: (22) 812-58-98
-                                <br> fax.: (22) 815-49-83
-                                <br>
-                                <br> simple@simple.com.pl
-                            </p>
-                        </article>
-                        <article class="location">
-                            <h4 class="h4-hidden">Just for validator warning</h4>
-                            <p>
-                                SIMPLE S.A.- Ośrodek Badawczo
-                                <br> -Rozwojowy Lublin
-                                <br>
-                                <br> ul. Wolska 11A/4
-                                <br> 20-411 Lublin
-                                <br>
-                                <br> tel. kom: +48 696 001 286
-                                <br>
-                                <br> lublin@simple.com.pl
-                            </p>
-                        </article>
-                        <article class="location">
-                            <h4 class="h4-hidden">Just for validator warning</h4>
-                            <p>
-                                SIMPLE S.A. - oddział Rzeszów
-                                <br>
-                                <br> ul. Rejtana 53A
-                                <br> 35-326 Rzeszów
-                                <br>
-                                <br> tel. kom.: +48 696 001 235
-                                <br> fax.: (17) 865 42 41
-                                <br>
-                                <br> rzeszow@simple.com.pl
-                            </p>
-                        </article>
+                    <div class="col-lg-12 col-sm-12 wrap-location col-xs-12" id="contact-carousel">
+                    <?php echo do_shortcode( '[slide-anything id="393"]' ); ?>
                     </div>
                 </div>
             </div>

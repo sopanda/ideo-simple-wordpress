@@ -2072,6 +2072,14 @@
 
     @media (min-width: 320px) and (max-width: 767px) {
         
+        .white #slider_393 .owl-nav div.owl-next {
+            background: url('http://wp-szkolenie-3.t.ideo/wordpress/wp-content/uploads/2017/12/arrow_white_right.png') no-repeat center center !important;
+        }
+
+        .white #slider_393 .owl-nav div.owl-prev {
+            background: url('http://wp-szkolenie-3.t.ideo/wordpress/wp-content/uploads/2017/12/arr_white_left.png') no-repeat center center !important;
+        }
+
         div#n2-ss-2 .n2-ss-section-main-content .n2-ss-layer {
             display: none;
         }
@@ -2506,7 +2514,7 @@
         /* KONTAKT SECTION MOBILE */
         #contact-section {
             margin-top: 0;
-            height: 380px;
+            height: 100%;
         }
         #contact-section .region-header h2 {
             padding-top: 4px;
