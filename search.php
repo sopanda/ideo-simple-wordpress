@@ -63,8 +63,10 @@ get_header('new'); ?>
 											global $user_ID;
 											$user_info = get_userdata($user_ID);
 											$current_link = get_author_posts_url($user_id, $user_info->display_name);
+											$username = get_the_author_meta('nickname');
+											$final_link = $current_link . $username;
 											?>
-											<a href="<?php echo $current_link ?>"><?php the_author(); ?></a>
+											<a href="<?php echo $final_link ?>"><?php the_author(); ?></a>
 									</p>
 									<div>
 										<a href="<?php echo get_permalink(); ?>" class="img-link">

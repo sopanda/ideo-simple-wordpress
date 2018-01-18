@@ -5,7 +5,14 @@
         </h2>
         <p>
             <?php echo get_the_date() ?> by
-            <a href="#">
+            <?php 
+                global $user_ID;
+                $user_info = get_userdata($user_ID);
+                $current_link = get_author_posts_url($user_id, $user_info->display_name);
+                $username = get_the_author_meta('nickname');
+                $final_link = $current_link . $username;
+            ?>
+            <a href="<?php echo $final_link ?>">
                 <?php the_author(); ?>
             </a>
         </p>
@@ -15,8 +22,8 @@
         </div>
         <div class="clearfix"></div>
         <p class="tags">
-            <?php the_tags(); ?>
-            Category: <?php the_category(', '); ?>
+            <?php the_tags(); ?> Category:
+            <?php the_category(', '); ?>
         </p>
     </div>
 </div>

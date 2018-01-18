@@ -10,9 +10,8 @@
                     Posts by:
                 </span>
                 <span class="search-query">
-                <?php
-                $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
-                echo $curauth->nickname;
+                    <?php
+                    the_author();
                 ?>
                 </span>
                 <div class="sub-search-exist">
@@ -26,39 +25,48 @@
         </header>
         <div>
             <main>
-            <?php if ( have_posts() ) : 
+                <?php if ( have_posts() ) : 
 					while ( have_posts() ) : the_post();
 					?>
-                    <div class="posts-wrap">
-                        <div class="post">
-                            <h2>
-                                <a href="<?php echo get_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h2>
-                            <p>
-                                <?php echo get_the_date() ?> by
-                                <a href="#">
-                                    <?php the_author(); ?>
-                                </a>
-                            </p>
-                            <div>
-                                <a href="<?php echo get_permalink(); ?>" class="img-link">
-                                    <?php the_post_thumbnail( $size = 'thumbnail'); ?>
-                                </a>
-                                <?php the_excerpt(); ?>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="tags">
-                                <?php the_tags(); ?>
-                                Category: <?php the_category(', '); ?>
-                            </p>
+                <div class="posts-wrap">
+                    <div class="post">
+                        <h2>
+                            <a href="<?php echo get_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h2>
+                        <p>
+                            <?php echo get_the_date() ?> by
+                            <?php 
+								global $user_ID;
+								$user_info = get_userdata($user_ID);
+								$current_link = get_author_posts_url($user_id, $user_info->display_name);
+								$username = get_the_author_meta('nickname');
+								$final_link = $current_link . $username;
+							?>
+                            <a href="<?php echo $final_link ?>">
+                                <?php the_author(); ?>
+                            </a>
+                        </p>
+                        <div>
+                            <a href="<?php echo get_permalink(); ?>" class="img-link">
+                                <?php the_post_thumbnail( $size = 'thumbnail'); ?>
+                            </a>
+                            <?php the_excerpt(); ?>
                         </div>
+                        <div class="clearfix"></div>
+                        <p class="tags">
+                            <?php the_tags(); ?> Category:
+                            <?php the_category(', '); ?>
+                        </p>
                     </div>
-                    <?php
+                </div>
+                <?php
 					endwhile; else: ?>
-                    <p><?php _e('No posts by this author.'); ?></p>
-                     <?php endif;
+                    <p>
+                        <?php _e('No posts by this author.'); ?>
+                    </p>
+                    <?php endif;
 					wp_pagenavi();
 				?>
             </main>
