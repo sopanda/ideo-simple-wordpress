@@ -83,7 +83,7 @@
         $( "<div class='clearfix'></div> ").insertAfter(".posts-wrap:odd");
 
 
-        $(".post > p:first-of-type a").removeAttr('href'); // disable author search link
+        // $(".post > p:first-of-type a").removeAttr('href'); // disable author search link
 
         /* MAGIC FOR READ MORE BTN */
 

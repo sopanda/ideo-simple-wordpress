@@ -59,9 +59,12 @@ get_header('new'); ?>
 									</h2>
 									<p>
 										<?php echo get_the_date() ?> by
-										<a href="#">
-											<?php the_author(); ?>
-										</a>
+										<?php 
+											global $user_ID;
+											$user_info = get_userdata($user_ID);
+											$current_link = get_author_posts_url($user_id, $user_info->display_name);
+											?>
+											<a href="<?php echo $current_link ?>"><?php the_author(); ?></a>
 									</p>
 									<div>
 										<a href="<?php echo get_permalink(); ?>" class="img-link">
