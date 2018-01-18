@@ -65,6 +65,8 @@
                 "text-align": "right",
                 'margin-bottom': "-62px"
             });
+            $('#wpcf7-f384-o1 .form-group label').empty();
+            $('#email-input').attr("placeholder", "Newsletter?");
         }
 
         /* Search results view */
