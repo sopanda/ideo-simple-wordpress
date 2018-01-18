@@ -56,6 +56,8 @@
                 'display': 'none'
             });
 
+            $('#wpcf7-f384-o1 .form-group label').text("Newsletter");
+
         } else if (width >= 320 && width < 768) {
             $('div#n2-ss-2 .nextend-bullet-bar').wrap('<div class="dotsWrapMobile"></div');
             $('.dotsWrapMobile').css({

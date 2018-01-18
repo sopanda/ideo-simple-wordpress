@@ -41,11 +41,14 @@
             <!-- Carousel -->
             <?php 
                     echo do_shortcode('[smartslider3 slider=2]');
-                ?>
+            ?>
             <!-- CAROUSEL  Ends -->
-            
-            <?php echo do_shortcode( '[contact-form-7 id="384" title="Subscription"]' ); ?>
-            
+
+            <!-- Form subscribe -->
+            <div class="center-cont">
+                  <?php echo do_shortcode( '[contact-form-7 id="384" title="Subscription" html_class="form-inline"]' ); ?>
+            </div>
+            <!-- Form subscribe ends -->
         </div>
     </section>
     <!-- Navigation and Header-section Ends-->
