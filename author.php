@@ -7,10 +7,13 @@
         <header>
             <h3>
                 <span class="search-result-title">
-                    Tag archives for:
+                    Posts by:
                 </span>
                 <span class="search-query">
-                    <?php single_tag_title(); ?>
+                <?php
+                $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
+                echo $curauth->nickname;
+                ?>
                 </span>
                 <div class="sub-search-exist">
                     <?php 
@@ -23,7 +26,7 @@
         </header>
         <div>
             <main>
-                <?php
+            <?php if ( have_posts() ) : 
 					while ( have_posts() ) : the_post();
 					?>
                     <div class="posts-wrap">
@@ -53,7 +56,9 @@
                         </div>
                     </div>
                     <?php
-					endwhile;
+					endwhile; else: ?>
+                    <p><?php _e('No posts by this author.'); ?></p>
+                     <?php endif;
 					wp_pagenavi();
 				?>
             </main>

@@ -535,53 +535,6 @@
         height: 891px;
     }
 
-    #new-form-carous {
-        position: absolute;
-        z-index: 15;
-        left: 50%;
-        bottom: 9px;
-        color: #073f57;
-        transform: translate(-50%, -50%);
-    }
-
-    #form-news-sect {
-        background-color: #ffffff;
-        width: 854px;
-        height: 55px;
-        padding-right: 0;
-    }
-
-    #form-news-sect img {
-        padding-top: 5px;
-    }
-
-    #lbl-email {
-        float: left;
-        font-size: 20px;
-        margin-left: 19px;
-        padding-right: 19px;
-    }
-
-    #letterWrap {
-        float: left;
-    }
-
-    #email-input {
-        width: 354px;
-        border-radius: 0;
-        height: 33px;
-    }
-
-    #btn-sub-wrap {
-        padding: 0;
-        width: 109px;
-        margin-left: 8px;
-    }
-
-    .news-gr {
-        padding-top: 12px;
-    }
-
     #btn-subscribe {
         height: 55px;
         width: 133px;
@@ -1517,42 +1470,7 @@
             line-height: 44px;
             word-spacing: 2px;
         }
-        #new-form-carous {
-            position: absolute;
-            z-index: 15;
-            top: 91.5%;
-            color: #073f57;
-            transform: translate(-50%, -50%);
-            max-width: 580px;
-        }
-        #form-news-sect {
-            background-color: #ffffff;
-            width: 74%;
-            height: 40px;
-            padding-right: 0;
-            padding-left: 8px;
-        }
-        #lbl-email-sm {
-            font-size: 16px;
-            float: left;
-            padding-bottom: 6px;
-            margin-left: 12px;
-        }
-        #form-news-sect img {
-            height: 50px;
-            width: 42px;
-            padding-bottom: 13px;
-        }
-        #email-input {
-            width: 304px;
-            padding-left: -8px;
-            border-radius: 0;
-            height: 23px;
-            margin-left: 19px;
-        }
-        .news-gr {
-            padding-top: 9px;
-        }
+        
         #btn-subscribe {
             height: 40px;
             width: 100px;
@@ -1562,9 +1480,7 @@
             color: #073f57;
             border: none;
         }
-        #new-form-carous .row {
-            width: 595px;
-        }
+        
         .side-menu {
             width: 17px;
             position: fixed;
@@ -2053,8 +1969,6 @@
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
-        
-        
         .subpage-h2-not-post img, .subpage-h2 img {
             margin-right: 1px;
             height: auto;
@@ -2173,18 +2087,7 @@
             height: 458px;
             width: 100%;
         }
-        #email-input-xs {
-            height: 20px;
-            border-radius: initial;
-            padding: 3px;
-        }
-        #form-news-sect {
-            background-color: #ffffff;
-            width: 78%;
-            height: 30px;
-            margin-bottom: 9px;
-            padding: 5px;
-        }
+      
         #btn-subscribe {
             height: 30px;
             width: 68px;
@@ -2197,12 +2100,6 @@
         }
         .news-gr {
             padding-top: 0;
-        }
-        #btn-sub-wrap {
-            padding: 0;
-            width: 62px;
-            margin-left: 3px;
-            height: 30px;
         }
         .carousel-indicators {
             text-align: center;
@@ -2220,16 +2117,7 @@
             height: 8px;
             margin: 0;
         }
-        #new-form-carous {
-            position: absolute;
-            z-index: 15;
-            left: 50%;
-            bottom: -17px;
-            color: #073f57;
-            transform: translate(-50%, -50%);
-            width: 90%;
-        }
-        /* Branze section*/
+       /* Branze section*/
         #branze-section {
             height: 458px;
             margin-top: -3px;
@@ -2322,7 +2210,6 @@
         }
         #produkty-section .title-sec {
             height: 34px;
-            margin-left: -85px;
             padding-left: 27px;
             padding-top: 9px;
             font-size: 17px;

@@ -72,6 +72,7 @@ get_header('new'); ?>
 									<div class="clearfix"></div>
 									<p class="tags">
 										<?php the_tags(); ?>
+										Category: <?php the_category(', '); ?>
 									</p>
 								</div>
 							</div>

@@ -7,10 +7,10 @@
         <header>
             <h3>
                 <span class="search-result-title">
-                    Tag archives for:
+                    Category archives for:
                 </span>
                 <span class="search-query">
-                    <?php single_tag_title(); ?>
+                    <?php single_cat_title(); ?>
                 </span>
                 <div class="sub-search-exist">
                     <?php 
