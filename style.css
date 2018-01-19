@@ -1383,6 +1383,19 @@
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
+
+        .search-query {
+            font-size: 19px;
+        }
+
+        .search-result-title {
+            font-size: 17px;
+        }
+
+        .post h2 {
+            font-size: 22px;
+        }
+
         div#n2-ss-2 .n2-ss-layer .n2-font-43e0da31bd93e1bebcb10109bdd80548-paragraph {
             display: none;
         }
@@ -2078,6 +2091,18 @@
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
+
+        .search-query {
+            font-size: 19px;
+        }
+
+        .search-result-title {
+            font-size: 17px;
+        }
+
+        .post h2 {
+            font-size: 22px;
+        }
         
         .white #slider_393 .owl-nav div.owl-next {
             background: url('http://wp-szkolenie-3.t.ideo/wordpress/wp-content/uploads/2017/12/arrow_white_right.png') no-repeat center center !important;
